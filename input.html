@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+    ></script>
+    <style>
+        body{
+            background-color: #fdf5e6;
+        }
+        .navbar{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            border-bottom: 2px solid rgb(228, 222, 222);
+            background-color: #C24641;
+        }
+        .logo {
+             height: 60px;
+             margin-left: 20px;
+             margin-right: -340px;
+             margin-top: -30px;
+            }
+        .saathi {
+            height: 40px;
+            margin-left: 300px;
+            margin-right: -60px;
+            margin-top: -30px;
+        }
+        .left {
+            height: 100%;
+            width: 22%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,sans-serif;
+            font-style: italic;
+            color: #033e3e;
+        }
+        .personal{
+            font-family: "Times New Roman", Times, serif;
+            height: 30px;
+            width: 100%;
+            margin-left: 9.94%;
+            background-color: #033e3e;
+        }
+        .office{
+            font-family: "Times New Roman", Times, serif;
+            margin-top: 15%;
+            height: 30px;
+            width: 100%;
+            margin-left: 9.94%;
+            margin-top: 25%;
+            background-color: #033e3e;
+        }
+
+        table.scrolldown {
+            width: 100%;
+              
+            /* border-collapse: collapse; */
+            border-spacing: 20px;
+            border: 1px solid black;
+        }
+          
+        /* To display the block as level element */
+        table.scrolldown tbody, table.scrolldown thead {
+            display: block;
+        } 
+          
+        thead tr th {
+            height: 40px; 
+            line-height: 40px;
+            
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+         }
+        table.scrolldown tbody {
+              
+            /* Set the height of table body */
+            height: 180px; 
+              
+            /* Set vertical scroll */
+            overflow-y: auto;
+              
+            /* Hide the horizontal scroll */
+            overflow-x: hidden; 
+        }
+          
+        tbody { 
+            border-top: 1px solid black;
+        }
+          
+        tbody td, thead th {
+            width : 400px;
+            border-right: 1px solid black;
+        }
+        td {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img class="logo" src="photo/handshake.png">
+            <img class="saathi" src="photo/oy.png">
+        </div>
+        
+        <div class="right">
+            <p style="font-style: italic; font-family: Montserat; color: rgb(230, 200, 177);margin-left: -240px; margin-top: 30px;">....a technology you can trust</p>
+        </div>
+    </div>
+
+<div class="det" style="display: flex; width: 100%; height: 100%;">
+    
+    <!--LEFT CONTENT-->
+    <div class="left-det" style="width: 30%; margin: 20px;">
+        <img src="https://cdn-icons.flaticon.com/png/512/3899/premium/3899618.png?token=exp=1656484824~hmac=e34f3cf2879134b71c9ada2af0db9134" style="height:130px; margin-top: -200px;margin-left: 120px">
+        <button class="btn btn-danger" onclick="logout()" style="margin-top: 35%; margin-left: -120px;">Logout</button>
+        <h4 style="text-align: center; margin-top: 8%;">Holiday List</h4>
+        <table class="scrolldown">
+            <!-- Table head content -->
+            <thead>
+                <tr>
+                    <th style="text-align: center;">Date</th>
+                    <th style="text-align: center;">Days</th>
+                    <th style="text-align: center;">Event</th>
+                </tr>
+            </thead>
+              
+            <!-- Table body content -->
+            <tbody>
+                <tr>
+                    <td>01.07.2022</td>
+                    <td>Friday</td>
+                    <td>Rath Yatra</td>
+                </tr>
+                <tr>
+                    <td>09.08.2022</td>
+                    <td>Tuesday</td>
+                    <td>Muharram</td>
+                </tr>
+                <tr>
+                    <td>15.08.2022</td>
+                    <td>Monday</td>
+                    <td>Independence Day</td>
+                </tr>
+                <tr>
+                    <td>18.08.2022</td>
+                    <td>Thursday</td>
+                    <td>Janmashtami</td>
+                </tr>
+                <tr>
+                    <td>31.08.2022</td>
+                    <td>Wednesday</td>
+                    <td>Ganesh Puja</td>
+                </tr>
+                <tr>
+                    <td>01.09.2022</td>
+                    <td>Thursday</td>
+                    <td>Nua Khai</td>
+                </tr>
+                <tr>
+                    <td>02.10.2022</td>
+                    <td>Sunday</td>
+                    <td>Gandhi Jayanti</td>
+                </tr>
+                <tr>
+                    <td>03.10.2022-05.10.2022</td>
+                    <td>Monday-Wednesday</td>
+                    <td>Durga Puja</td>
+                </tr>
+                <tr>
+                    <td>09.10.2022</td>
+                    <td>Sunday</td>
+                    <td>Birthday of Prophet Mohammad</td>
+                </tr>
+                <tr>
+                    <td>24.10.2022</td>
+                    <td>Monday</td>
+                    <td>Kali Puja</td>
+                </tr>
+                <tr>
+                    <td>25.12.2022</td>
+                    <td>Sunday</td>
+                    <td>Christmas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--RIGHT CONTENT-->
+    <div class="right" style="width: 60.85%;">
+        <!--PERSONAL-->
+        <div class="personal">
+            <h4  style="font-family: Montserat; color: rgb(230, 200, 177); margin-left: 30px;">Employee Personal Details - </h4>
+
+            <div class="con" style="display: flex; margin-left: 5%;">
+            <!--PERSONAL LEFT-->
+            <div class="p-l">
+                <li>Name:</li>
+                <li style="margin-top: 2px">Date-Of-Birth:</li>
+                <li style="margin-top: 2px">Age:</li>
+                <li style="margin-top: 2px">Personal Mobile Number:</li>
+                <li style="margin-top: 2px">Blood-Group:</li>
+            </div>
+            <!--PERSONAL RIGHT-->
+            <div class="p-r" style="margin-left: 5%; font-style: italic;">
+                <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center;">
+                    <span id="users.name"></span>
+                </div>
+                <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.dob"></span>
+                </div>
+                <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.age"></span>
+                </div>
+                <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.mob"></span>
+                </div>
+                <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.bg"></span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!--OFFICE-->
+        <div class="office">
+            <h4  style="font-family: Montserat; color: rgb(230, 200, 177); margin-left: 30px;">Employee Office Details - </h4>
+
+            <div class="con" style="display: flex; margin-left: 5%;">
+                <!--OFFICE LEFT-->
+                <div class="o-l">
+                    <li>Employee ID:</li>
+                    <li style="margin-top: 2px">Date-Of-Joining:</li>
+                    <li style="margin-top: 2px">Status:</li>
+                    <li style="margin-top: 2px">Department:</li>
+                    <li style="margin-top: 2px">Designation:</li>
+                    <li style="margin-top: 2px">Current Office Location:</li>
+                    <li style="margin-top: 25px">Office Phone Number:</li>
+                </div>
+
+                <!--OFFICE RIGHT-->
+                <div class="o-r" style="margin-left: 6%; font-style: italic;">
+                    <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center;">
+                    <span id="users.empID"></span>
+                    </div>
+                    <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.doj"></span>
+                    </div>
+                    <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.stat"></span>
+                    </div>
+                    <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.dept"></span>
+                    </div>
+                    <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.Designation"></span>
+                    </div>
+                    <div class="box" style="width:250px; border: 1px solid green ; height: 50px; text-align: center; margin-top: 2px">
+                    <span id="users.col"></span>
+                    <div class="box" style="width:250px; border: 1px solid green ; height: 25px; text-align: center; margin-top: 2px">
+                    <span id="users.num"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    
+    <script src="input.js"></script>
+    <script src="index.js"></script>
+</body>
+</body>
+</html>

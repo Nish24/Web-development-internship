@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wecome Page</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <style>
+        body{
+            background-color: #fdf5e6;;
+        }
+        .button {
+            background-color: #C24641;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            width: 160px;
+            font-family: Montserat; 
+            margin: 4px 2px;
+        }
+        .button:hover {
+            background-color: #E42217;
+        }
+
+        .navbar{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            border-bottom: 2px solid rgb(228, 222, 222);
+            background-color: #C24641;
+        }
+        .logo {
+             height: 60px;
+             margin-left: 20px;
+             margin-right: -340px;
+             margin-top: -30px;
+            }
+        .saathi {
+            height: 40px;
+            margin-left: 300px;
+            margin-right: -60px;
+            margin-top: -30px;
+        }
+        .left {
+            height: 100%;
+            width: 22%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,sans-serif;
+            font-style: italic;
+            color: #033e3e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="left">
+            <img class="logo" src="photo/handshake.png">
+            <img class="saathi" src="photo/oy.png">
+        </div>
+        <div class="right">
+            <p style="font-style: italic; font-family: Montserat; color: rgb(230, 200, 177);margin-left: -240px; margin-top: 30px;">....a technology you can trust</p>
+        </div>
+    </div>
+
+    <div class="notice">
+        <div class="nav" style="width: 100%; height:30px; background-color:#033e3e; border-bottom: 2px solid rgb(228, 222, 222);">
+            <p style="font-family: Montserat; color: rgb(230, 200, 177); margin-left: 9%;">Important Notice for Employees</p>
+        </div>
+        <div class="flash" style="width: 100%; height:60px; border-bottom: 1px solid #033e3e; background-color: #E5E4E2">
+            <marquee width = "100%" style="margin-top: 1.5%; font-family: Montserat; color: #033e3e;">Please click on the self-service tab to get your details!!!</marquee>
+        </div>
+    </div>
+    <center><div style="margin:20px; font-family: Montserat;">
+        <span id="user" class="message">Hello, < email-id ></Email-id></span>
+        <div class="success"><span>You are successfully logged in!</span></div><br/>
+        <h3>Welcome to</h3>
+        <h1>Saathi Self Service Portal</h1>
+    </div>
+    <button class="button"><a href="index.html" target="_blank" style="text-decoration:none; color: rgb(230, 200, 177);">Home</a></button>
+    <button class="button" ><a href="input.html" target="_blank" style="text-decoration:none; color: rgb(230, 200, 177);">Self-Service</a></button>
+</center>
+
+
+    <script src="firebase.js"></script>
+    <script src="welcome.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

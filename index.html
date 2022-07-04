@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathi</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body onload="myFunction()">
+
+
+    <!-- Loader -->
+    <div id="loading">
+
+    </div>
+    <!-- Loader -->
+
+    <!-- Arrow to scroll -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="uil uil-arrow-up"></i></button>
+    <!-- Arrow to scroll -->
+
+    <!--Pop-up-->
+    <div id="popupmain">
+        <div id="pop">
+            <form id="defaultp" name="form1">
+                <h1 id="newsheading">Subscribe to our Newsletter</h1>
+                <input type="text" name="text1" id="emailId" placeholder="user@email.com">
+                <button class="submit" onclick="ValidateEmail(document.form1.text1)"> Subscribe
+                </button>
+                <button class="submitId" onclick="submitIdFunc()"> No Thanks </button>
+            </form>
+        </div>
+    </div>
+    <!--Pop-up-->
+
+
+
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="left">
+            <img class="logo" src="photo/handshake.png">
+            <img class="saathi" src="photo/oy.png">
+        </div>
+        <div class="right">
+            <a href="#home1">Home</a>
+            <a href="#about1">About</a>
+            <a href="#service1">Services</a>
+            <a href="#contact1">Contact</a>
+        </div>
+    </div>
+    <!--Navbar-->
+
+    <!--HOME-->
+    <div class="pic" id="home1">
+        <img class="w3-animate-fading" src="photo/pic13.png" style="width:100%; filter:brightness(0.6);">
+        <img class="w3-animate-fading" src="photo/pic12.png" style="width:100%; filter: brightness(0.6);">
+        <img class="w3-animate-fading" src="photo/pic10.png" style="width:100%; filter: brightness(0.6);">
+        <img class="w3-animate-fading" src="photo/pic6.png" style="width:100%; filter: brightness(0.6);">
+    </div>
+
+    <div class="title">
+        <h1>Humesha Apke Saath!</h1>
+    </div>
+    <div class="para">
+        <p>"A technology foundation you can trust"</p>
+    </div>
+    <div class="log">
+        <a href="login.html" target="_blank">
+            <button class="login">LOGIN</button>
+        </a>
+        <a href="signup.html" target="_blank">
+            <button class="signup">SIGN-UP</button>
+        </a>
+    </div>
+    <!--HOME-->
+
+    <!--TRUST-->
+    <div class="trust">
+        <img class="tru" src="photo/briefcase.png">
+        <p>Trusted by more than<br>2,000 businesses and<br>their teams.</p>
+        <div class="s">
+            <img src="photo/stars.png" style="height: 80px; margin-left: 47%; margin-top: 0.5%;">
+        </div>
+    </div>
+    <!--TRUST-->
+
+    <!--ABOUT-->
+    <div id="about1" class="abt">
+        <div class="abt-text">
+            <h1 style="text-align:center; color:black; opacity: 0.0;">ABOUT</h1>
+            <h5>The People Platform</h5>
+            <h3>Manage your growing team,<br>
+                all in one place.
+            </h3>
+            <p>Behind every successful business is a thriving team.<br>
+                support your employees with Saathi's all-in-one people platform</p>
+        </div>
+        <div class="work">
+            <img src="photo/money.png">
+            <img src="photo/cardiogram.png">
+            <img src="photo/chronometer.png">
+            <img src="photo/talent.png">
+            <img src="photo/graph.png">
+        </div>
+        <div class="des">
+            <p>Full-Service<br>Payroll</p>
+            <p>Employee<br>Benefits</p>
+            <p>Time and<br>Attendance</p>
+            <p>Talent<br>Management</p>
+            <p>Insights and<br>Reporting</p>
+        </div>
+        <div class="sticker">
+            <img src="photo/office.png" style="height: 200px; margin-top: 6%; align-items: center;">
+        </div>
+    </div>
+    <!--ABOUT-->
+
+    <!--SERVICE-->
+    <div id="service1" class="service">
+        <h1 style="opacity: 0%;">SERVICES</h1>
+        <div class="b1">
+            <div class="head">
+                Stay Compliant
+            </div>
+            <div class="text">
+                Keeping a business compliant is made easier with Saathi. We automate many of the compliance tasks and
+                government filings for you. Our built-in safeguards prevent accidental mistakes, while our compliance
+                calendar ensures you never miss an important deadline.
+            </div>
+        </div>
+        <div class="b2">
+            <div class="head">
+                Improve Productivity
+            </div>
+            <div class="text">
+                Many of our features like self onboarding, selecting benefits, and signing documents happen completely
+                online, which means your employees will spend more time focused on their core functions, without
+                administrative distraction.
+            </div>
+        </div>
+        <div class="b3">
+            <div class="head">
+                Improve Employee Experience
+            </div>
+            <div class="text">
+                We don’t just make your HR life better, we improve your employees’ overall experience. From a mobile app
+                that streamlines onboarding and requesting time off, to a modern experience that lets employees sign up
+                for benefits online.
+            </div>
+        </div>
+        <div class="b4">
+            <div class="head">
+                Reduce Errors
+            </div>
+            <div class="text">
+                Moving to our fully digital HR platform means reducing errors common with manual entry and paperwork –
+                errors that can have an important impact on your business, like overpaying an employee or filing tax
+                forms with the wrong personnel information.
+            </div>
+        </div>
+    </div>
+    <!--SERVICE-->
+
+    <div id="contact1" class="cont">
+        <h1 style="opacity: 0%;">CONTACT</h1>
+        <div class="chat">
+            <h3 style="text-align:left; font-weight:600; font-size:40px ">Chat with us</h3>
+            <p style="text-align:left; font-weight:100; font-size:18px; margin-top: 3%; ">Get product info, login help,
+                and live chat with an agent.</p>
+            <button class="button" style="margin-top:10%;">Let's Chat</button>
+        </div>
+        <div class="nish">
+            <img src="photo/nish.png" style="border-radius: 50%;height:120px; margin-left: 65px; margin-top: -50px;">
+            <div class="heading" style="text-align:center; font-weight:400px; font-size:22px;margin-top:10%">Nishitha Sahoo</div>
+            <h5 style="text-align:center; font-weight:100px; font-size:12px;margin-top:5%;color: #FFDB58;">Web Development Intern</h5>
+            <p style="text-align:center; font-weight:100px; font-size:14px;margin-top:7%; padding: 20px;">CSSE student at KIIT University Bhubaneshwar, Odisha.</p>
+        </div>
+        <div class="aish">
+            <img src="photo/aish.png" style="border-radius: 50%;height:120px; margin-left: 65px; margin-top: -50px;">
+            <div class="heading" style="text-align:center; font-weight:400px; font-size:22px;margin-top:10%">Aishwarya Basu</div>
+            <h5 style="text-align:center; font-weight:100px; font-size:12px;margin-top:5%;color: #FFDB58;">Web Development Intern</h5>
+            <p style="text-align:center; font-weight:100px; font-size:14px;margin-top:7%; padding: 20px;">CSE student at KIIT University Bhubaneshwar. Web Development enthusiast, eager to contribute through hardwork. </p>
+            <div class="social">
+                <a href="#"><i class="fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="captcha.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+        var preloader = document.getElementById('loading');
+        function myFunction() {
+            preloader.style.display = 'none';
+        }
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("w3-animate-fading");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 6000);
+        }
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#popupmain').css('display', 'block');
+            }, 10000);
+        });
+
+        $('.submitId').click(function () {
+            $('#popupmain').css('display', 'none');
+        });
+
+
+    </script>
+</body>
+
+</html> 
